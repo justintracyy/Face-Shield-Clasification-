@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classifier</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}?q=1280549780">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+
+    <!-- logo -->
+    <header id="toplogo">
+		<div class="container-cawil">
+			<image src="{{url_for('static',filename = 'images/cawil.svg')}}" ></image>
+		</div>
+	</header>
+
+    <!-- header -->
+        <h1 class="covid">COVID RESPONSE : </h1>
+        <h1 class="fsc">FACE SHIELD CLASSIFIER</h1>
+
+    <!-- section -->
+
+        <section class="classify1">
+            <h1 class="preview">IMAGE PREVIEW</h1>
+
+            <div class="container">
+                <div class="rectangle"></div>
+                <div class="rectangle-white"></div>
+                <div class="rectangle-blue1"></div>
+                <span class="result">RESULT</span>
+
+                <header id=logo2>
+                    <div>
+                        <image src="{{url_for('static',filename = 'images/R12.svg')}}" ></image>
+                    </div>
+                </header>
+
+            </div>
+        </section>
+
+        <section class="but">
+            <div class="container">
+                
+                <form class="form-horizontal" action="/submit" method="post" enctype="multipart/form-data">
+
+                    <div class="form-group1">
+                      <!-- <label class="control-label col-sm-2" for="pwd"></label> -->
+                      <!-- <div class="col-sm-10">           -->
+                        <input type="file" class="button-5" placeholder="Hours Studied"  name="my_image" id="file" style="display: none;">
+                        <label class="upload" for="file" style="text-align: center;">
+                            UPLOAD
+                        </label>
+                    </div>
+                    </div>
+                
+                    <div class="form-group2">        
+                      <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-detect"><b>DETECT</b></button>
+                      </div>
+                    </div>
+                  </form>
+
+                {% if prediction %}
+                <div class="result-image">
+                        <img src="{{img_path}}" height="351" width="389px">
+                </div>
+                    <div class="predict-result">
+                    <h2> DETECTION   : <i> {{prediction}} </i></h2>
+                    </div>
+                {% endif %}
+              
+        </section>
+</body>
+</html>
