@@ -1,0 +1,297 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+* {
+    font-family: Poppins;
+}
+
+#toplogo {
+    position: absolute;
+    width: 196px;
+    height: 57px;
+    left: 120px;
+    top: 20px;
+
+}
+
+.welcome {
+    position: absolute;
+    width: 318px;
+    height: 45px;
+    left: 151px;
+    top: 257px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 45px;
+    color: #3152FF;
+}
+
+.fs-1 {
+    position: absolute;
+    width: 705px;
+    height: 138px;
+    left: 151px;
+    top: 320px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 75px;
+    color: #FFBF00;;
+}
+
+.pic {  
+    position: absolute;
+    width: 435px;
+    height: 452px;
+    left: 1100px;
+    top: 213px;
+
+}
+
+.btn-primary{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px 35px;
+    text-align: center;
+
+
+    position: absolute;
+    width: 203px;
+    height: 58px;
+    left: 151px;
+    top: 500px;
+
+    background: #2700C0;
+    border-radius: 20px;
+}
+
+/* .ib {
+    position: static;
+    width: 133px;
+    height: 38px;
+    left: 35px;
+    top: 10px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 37px;
+    
+    color: #FFFF;
+
+    /* Inside Auto Layout */
+
+    /* flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+/* } */ 
+
+.covid {
+    position: absolute;
+    width: 265px;
+    height: 10px;
+    left: 552px;
+    top: 175px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 10px;
+/* identical to box height, or 33% */
+
+
+color: #3152FF;
+}
+
+.fsc {
+    position: absolute;
+    width: 458px;
+    height: 10px;
+    left: 824px;
+    top: 175px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 10px;
+    /* identical to box height, or 33% */
+
+
+    color: #FFBF00;
+
+}
+
+.preview {
+    position: absolute;
+    width: 285px;
+    height: 54px;
+    left: 273px;
+    top: 254px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 54px;
+    /* identical to box height */
+
+
+    color: #000000;
+
+}
+
+.rectangle {
+    position: absolute;
+    width: 1034px;
+    height: 369px;
+    left: 273px;
+    top: 326px;
+
+    background: #FFBF00;
+    border-radius: 20px;
+}
+
+.rectangle-white {
+    position: absolute;
+    width: 618px;
+    height: 260px;
+    left: 673px;
+    top: 431px;
+
+    background: #FFFFFF;
+}
+
+.rectangle-blue1 {   
+    position: absolute;
+    width: 618px;
+    height: 91px;
+    left: 673px;
+    top: 340px;
+
+
+    background: #3152FF;
+}
+
+#logo2 {
+    position: absolute;
+    width: 389px;
+    height: 351px;
+    left: 284px;
+    top: 340px;
+}
+
+.result {
+    position: absolute;
+    width: 126px;
+    height: 53px;
+    left: 685px;
+    top: 351px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 52px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+
+
+}
+
+.form-group2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px 35px;
+
+    position: absolute;
+    width: 164px;
+    height: 58px;
+    left: 509px;
+    top: 719px;
+
+    background: #FFBF00;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.form-group1{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px 10px;
+    
+
+    position: absolute;
+    width: 215px;
+    height: 58px;
+    left: 284px;
+    top: 719px;
+
+    background: #3152FF;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+ 
+} 
+
+.upload {
+    position: static;
+    width: 180px;
+    height: 38px;
+    left: 50px;
+    top: 10px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 37px;
+    /* identical to box height */
+
+    color: #FFFFFF;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+}
+
+.result-image {
+    position: absolute;
+    width: 389px;
+    height: 351px;
+    left: 284px;
+    top: 340px;
+}
+ 
+.predict-result {
+    position: absolute;
+    width: 290px;
+    height: 37px;
+    left: 685px;
+    top: 510px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+
+    color: #FFBF00;
+
+}
